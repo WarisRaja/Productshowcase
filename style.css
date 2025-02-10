@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+html,
+body {
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
 }
 
 main {
   height: 100%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 main > p {
   height: 13vw;
@@ -38,7 +40,7 @@ main h3 {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 100px;
   border: rgb(240, 228, 228) solid 1px;
   border-radius: 10px;
@@ -65,7 +67,7 @@ main h3 {
   width: 13vw;
   right: 3vw;
   position: absolute;
-  background-color: #E74C3C;
+  background-color: #e74c3c;
 }
 #card #details {
   width: 100%;
@@ -98,8 +100,119 @@ main h3 {
   width: 100%;
   border-radius: 3vw;
   outline: none;
-  border: #2ECC71;
+  border: #2ecc71;
   color: whitesmoke;
-  background-color: #2ECC71;
+  background-color: #2ecc71;
   font-size: 8vw;
+}
+
+footer {
+  height: 10vw;
+  width: 100%;
+  padding: 2vw;
+  text-align: center;
+  font-size: large;
+  background-color: #dfdad9;
+}
+
+@media (min-width: 1020px) {
+  html,
+  body {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  main {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  main > p {
+    height: 8vw;
+    padding-top: 2vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  main h3 {
+    margin-top: 0vw;
+    font-size: 2vw;
+  }
+  #card-con {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 80%;
+    padding: 5vw;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  #card-con #card {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border: rgb(240, 228, 228) solid 1px;
+    border-radius: 10px;
+    box-shadow: -5px -2px 36px -13px rgba(0, 0, 0, 0.75);
+    margin-bottom: 2vw;
+  }
+  #card #imgcont {
+    width: 100%;
+    height: 50%;
+  }
+  #card #imgcont img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+  }
+  #card #imgcont p {
+    top: 2%;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    width: -moz-fit-content;
+    width: fit-content;
+    right: 1vw;
+  }
+  #card #details {
+    width: 100%;
+    height: 50%;
+    padding: 1vw;
+  }
+  #card #details > h4 {
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+  }
+  #card #details #rating {
+    width: 100%;
+    font-size: 1.5vw;
+    color: #ffcc00;
+    margin-bottom: 0.5vw;
+  }
+  #card #details #about {
+    width: 100%;
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+  }
+  #card #details #price {
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+  }
+  #card #details button {
+    height: 3.5vw;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 2vw;
+  }
+  footer {
+    height: 2vw;
+    width: 100%;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: large;
+    background-color: #dfdad9;
+  }
 }/*# sourceMappingURL=style.css.map */
